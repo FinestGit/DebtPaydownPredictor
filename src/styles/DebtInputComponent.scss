@@ -1,0 +1,18 @@
+@use "fonts";
+
+.debt-input-component-container {
+  padding: 1em;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(8, 1fr);
+  width: 100vw;
+  background-color: fonts.$modal-background-color-1;
+}
+
+.debt-input-component-title {
+  font-weight: 300;
+  font-size: 20px;
+  color: fonts.$font-color-1;
+  grid-column-start: 1;
+  grid-column-end: 9;
+}
