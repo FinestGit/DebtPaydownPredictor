@@ -17,7 +17,7 @@
     grid-column-end: 9;
   }
 
-  .debt-name-input {
+  .debt-input {
     grid-column-start: span 2;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -29,63 +29,8 @@
     }
 
     input {
-      grid-row-start: 2;
-      border: none;
-      border-radius: 4px;
-      background-color: colors.$input-color-1;
-    }
-  }
-
-  .debt-total-due-input {
-    grid-column-start: span 2;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-
-    label {
-      grid-row-start: 1;
-      font-size: 13px;
-      color: colors.$font-color-1;
-    }
-
-    input {
-      grid-row-start: 2;
-      border: none;
-      border-radius: 4px;
-      background-color: colors.$input-color-1;
-    }
-  }
-
-  .debt-monthly-payment-input {
-    grid-column-start: span 2;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-
-    label {
-      grid-row-start: 1;
-      font-size: 13px;
-      color: colors.$font-color-1;
-    }
-
-    input {
-      grid-row-start: 2;
-      border: none;
-      border-radius: 4px;
-      background-color: colors.$input-color-1;
-    }
-  }
-
-  .debt-apr-input {
-    grid-column-start: span 2;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-
-    label {
-      grid-row-start: 1;
-      font-size: 13px;
-      color: colors.$font-color-1;
-    }
-
-    input {
+      padding: 5px 8px;
+      color: colors.$input-text-color-1;
       grid-row-start: 2;
       border: none;
       border-radius: 4px;
@@ -97,25 +42,8 @@
     grid-column-end: 7;
   }
 
-  .debt-input-cancel {
+  .debt-button {
     padding: 0.25em;
-    border: none;
-    border-radius: 8px;
-    color: colors.$font-color-1;
-    background-color: colors.$button-color-1;
-
-    &:hover {
-      color: color.adjust(colors.$font-color-1, $whiteness: -20%);
-      background-color: color.adjust(colors.$button-color-1, $lightness: -15%);
-    }
-
-    &:active {
-      color: color.adjust(colors.$font-color-1, $whiteness: -5%);
-      background-color: color.adjust(colors.$button-color-1, $lightness: -5%);
-    }
-  }
-
-  .debt-input-save {
     border: none;
     border-radius: 8px;
     color: colors.$font-color-1;
