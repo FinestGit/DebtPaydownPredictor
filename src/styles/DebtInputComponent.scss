@@ -1,0 +1,134 @@
+@use "sass:color";
+@use "colors";
+
+.debt-input-component-container {
+  padding: 1em;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(8, 1fr);
+  width: 100vw;
+  background-color: colors.$modal-background-color-1;
+
+  .debt-input-component-title {
+    font-weight: 300;
+    font-size: 20px;
+    color: colors.$font-color-1;
+    grid-column-start: 1;
+    grid-column-end: 9;
+  }
+
+  .debt-name-input {
+    grid-column-start: span 2;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+    label {
+      grid-row-start: 1;
+      font-size: 13px;
+      color: colors.$font-color-1;
+    }
+
+    input {
+      grid-row-start: 2;
+      border: none;
+      border-radius: 4px;
+      background-color: colors.$input-color-1;
+    }
+  }
+
+  .debt-total-due-input {
+    grid-column-start: span 2;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+    label {
+      grid-row-start: 1;
+      font-size: 13px;
+      color: colors.$font-color-1;
+    }
+
+    input {
+      grid-row-start: 2;
+      border: none;
+      border-radius: 4px;
+      background-color: colors.$input-color-1;
+    }
+  }
+
+  .debt-monthly-payment-input {
+    grid-column-start: span 2;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+    label {
+      grid-row-start: 1;
+      font-size: 13px;
+      color: colors.$font-color-1;
+    }
+
+    input {
+      grid-row-start: 2;
+      border: none;
+      border-radius: 4px;
+      background-color: colors.$input-color-1;
+    }
+  }
+
+  .debt-apr-input {
+    grid-column-start: span 2;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+    label {
+      grid-row-start: 1;
+      font-size: 13px;
+      color: colors.$font-color-1;
+    }
+
+    input {
+      grid-row-start: 2;
+      border: none;
+      border-radius: 4px;
+      background-color: colors.$input-color-1;
+    }
+  }
+
+  .debt-input-spacer {
+    grid-column-end: 7;
+  }
+
+  .debt-input-cancel {
+    padding: 0.25em;
+    border: none;
+    border-radius: 8px;
+    color: colors.$font-color-1;
+    background-color: colors.$button-color-1;
+
+    &:hover {
+      color: color.adjust(colors.$font-color-1, $whiteness: -20%);
+      background-color: color.adjust(colors.$button-color-1, $lightness: -15%);
+    }
+
+    &:active {
+      color: color.adjust(colors.$font-color-1, $whiteness: -5%);
+      background-color: color.adjust(colors.$button-color-1, $lightness: -5%);
+    }
+  }
+
+  .debt-input-save {
+    border: none;
+    border-radius: 8px;
+    color: colors.$font-color-1;
+    background-color: colors.$button-color-1;
+
+    &:hover {
+      color: color.adjust(colors.$font-color-1, $whiteness: -20%);
+      background-color: color.adjust(colors.$button-color-1, $lightness: -15%);
+    }
+
+    &:active {
+      color: color.adjust(colors.$font-color-1, $whiteness: -5%);
+      background-color: color.adjust(colors.$button-color-1, $lightness: -5%);
+    }
+  }
+}
